@@ -1,7 +1,7 @@
 ### To-do List
 - [x] cpu-usage-chart  
-- [x] cpu-monitor.html  
-- [x] index.js  
+    - [x] cpu-monitor.html  
+    - [x] index.js  
 - [ ] memory-chart
 
 ## Scripts
