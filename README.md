@@ -1,4 +1,5 @@
 ### To-do List
+- [ ] cannot visit from local network
 - [x] cpu-usage-chart  
     - [x] cpu-monitor.html  
     - [x] index.js  
