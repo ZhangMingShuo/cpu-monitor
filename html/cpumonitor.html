@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>cpumonitor</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            google.charts.load('current', {packages: ['corechart', 'line']});
+            google.charts.setOnLoadCallback(drawBasic);
+            var chartLoaded = false;
+            var histogram = [];
+            function drawBasic() {
+
+                var data = new google.visualization.DataTable();
+                data.addColumn('number', 'X');
+                data.addColumn('number', 'CPU');
+
+                data.addRows(histogram);
+
+                var options = {
+                    hAxis: {
+                      title: 'Seconds'
+                    },
+                    vAxis: {
+                      title: 'CPU Load %',
+                      viewWindow:{
+                          min:0,
+                          max:100
+                      }
+                    }
+                  };
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+                chartLoaded = true;
+            }
+            
+            var socket = io();
+            
+            socket.on('cpu histogram',function(cpuHistogram){
+                //console.log(cpuHistogram);    
+                histogram = cpuHistogram;
+                
+                if(chartLoaded)
+                {
+                    drawBasic();
+                }
+            });
+            
+        </script>
+    </head>
+    <body>
+      
+        <div id="chart_div"></div>
+    </body>
+</html>
