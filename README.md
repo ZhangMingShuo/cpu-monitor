@@ -1,8 +1,8 @@
 ### To-do List
 - [x] cpu-usage-chart  
-          - [x] cpu-monitor.html  
-          - [x] index.js  
-- [] memory-chart
+    - [x] cpu-monitor.html  
+    - [x] index.js  
+- [ ] memory-chart
 
 ## Scripts
 you can run:  
