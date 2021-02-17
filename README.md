@@ -15,6 +15,6 @@ express 4.17.1
 os-utils 0.0.14   
 socket.io 3.1.1  
 ### `sudo node index.js`
-Open [http://localhost/cpu-monitor.html](http://localhost/cpu-monitor.html) to view it in the browser.  
+Open [http://localhost/cpumonitor.html](http://localhost/cpumonitor.html) to view it in the browser.  
 ## chart
 google line chart  
