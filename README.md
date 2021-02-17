@@ -18,4 +18,4 @@ socket.io 3.1.1
 Open [http://localhost/cpumonitor.html](http://localhost/cpumonitor.html) to view it in the browser.  
 ## chart
 google line chart  
-![cpumonitor.gif](https://i.loli.net/2021/02/17/1NgaS46WAlYKtQo.gif)
+![cpumonitor.gif](https://i.loli.net/2021/02/17/RiDGybslSJCU1Am.gif)
